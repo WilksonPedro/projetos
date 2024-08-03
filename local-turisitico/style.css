@@ -7,10 +7,12 @@
 
 :root {
     font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    font-weight: normal;
 }
 
 body{
-    background-color: aliceblue;
+    background-color: #f5f4f0;
     width: 1120px;
     padding: 88px 80px 137px ;
     border: solid 1px black;
@@ -24,7 +26,7 @@ header {
 }
 header h2{
     font-weight: bold;
-    font-size: 16px;
+    font-size: 32px;
     height: auto;
     color: #E1624F;
     margin-bottom: 8px;
@@ -32,5 +34,10 @@ header h2{
 
 header h1 {
     font-size: 36px;
+    font-weight: bold;
+}  
 
+.subtitle {
+    font-size: 16px;
+    font-style: italic;
 }
