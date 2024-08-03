@@ -13,23 +13,20 @@
 
 body{
     background-color: #f5f4f0;
-    width: 1120px;
-    padding: 88px 80px 137px ;
-    border: solid 1px black;
+    padding: 88px 80px 142px 80px  ;
     margin: 0 auto;
 }
 
 header {
     margin-bottom: 40px;
-    border: solid 1px black;
-
 }
-header h2{
+header p{
     font-weight: bold;
     font-size: 32px;
     height: auto;
     color: #E1624F;
     margin-bottom: 8px;
+    text-transform: uppercase;
 }
 
 header h1 {
@@ -37,7 +34,54 @@ header h1 {
     font-weight: bold;
 }  
 
+.banner{
+    margin-bottom: 40px;
+}
+
+.banner img{
+    border-radius: 28px;
+    width: 100%;
+    margin-bottom: 24px;
+}
+
+.divider {
+    width: 100%;
+    height: 1px;
+    margin: 36px 0;
+    background-color: #d9d9d9;
+}
 .subtitle {
     font-size: 16px;
     font-style: italic;
+    text-align: center;
+    color: #333333;
+}
+
+.apresentation {
+    margin-top: 64px;
+    margin-bottom: 64px;
+}
+
+section p {
+    font-size: 16px;
+    font-weight: normal;
+    color: #333333;
+}
+
+.headline{
+    height: 68px;
+    margin-bottom: 8px;
+}
+
+.headline p{
+    color: #E1624F;
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 2px;
+    text-transform: uppercase;
+}
+
+.headline h2 {
+    font-size: 32px;
+    font-weight: bold;
 }
