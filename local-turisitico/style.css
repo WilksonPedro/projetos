@@ -85,3 +85,76 @@ section p {
     font-size: 32px;
     font-weight: bold;
 }
+
+/*Inicio dos locais turisticos*/
+
+.firstLocation img {
+    width: 100%;
+    border-radius: 28px;
+    margin-bottom: 20px;
+    /*object-fit: cover serve para ajustar a imagem para caber no container e nao se distorcer*/
+    object-fit: cover;
+}
+
+.firstLocation h3 {
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 4px;
+}
+
+.firstLocation ul{
+    font-size: 16px;
+    font-weight: bold;
+
+}
+
+.secondLocation img{
+    width: 100%;
+    border-radius: 28px;
+    margin-bottom: 20px;
+    object-fit: cover;
+}
+
+.secondLocation h3 {
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 4px;
+}
+
+.secondLocation ul {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.thirdLocation img {
+    width: 100%;
+    border-radius: 28px;
+    margin-bottom: 20px;
+    object-fit: cover;
+}
+
+.thirdLocation h3 {
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 4px;
+}
+
+.thirdLocation ul {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.casais {
+    color: #591b98;
+    font-weight: bold;
+}
+
+.familias {
+    color: #e5245e;
+    font-weight: bold;
+}
+
+.orcamento {
+    color: #e95e10;
+    font-weight: bold;
+}
