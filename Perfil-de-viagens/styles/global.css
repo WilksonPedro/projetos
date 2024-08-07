@@ -16,11 +16,18 @@ vaireveis que podem ser usadas em qualquer parte do CSS */
     --shape-transparency: hwb(0 100% 0% / 0.568);
     
     /*Texto */
+    --font-family: "Poppins", sans-serif;
+    --text-lg: bold 32px/125% var(--font-family);
+    --text: 16px/150% var(--font-family);
+    --text-md: 14px/170% var(--font-family);
+    --text-sm: 12px/170% var(--font-family);
     --text-color-primary: #313131;
     --text-color-secondary: #6c6c6c;
 }
 
 body {
+    /* font sera o responsavel pelo texto e tamanho padrão do site */
+    font: var(--text);
     color: var(--text-color-secondary);
     background-color: var(--background-color);
 }
