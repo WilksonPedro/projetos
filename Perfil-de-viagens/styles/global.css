@@ -3,3 +3,24 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+/*A tag :root é usada para definir variáveis globais no CSS ou seja 
+vaireveis que podem ser usadas em qualquer parte do CSS */
+:root {
+    --brand-color: #ef5f4c;
+    
+    /*Corpo do site */
+    --background-color: aliceblue;
+    --surface-color: #f5f5f5;
+    --skeleton-color: #d9d9d9;
+    --shape-transparency: hwb(0 100% 0% / 0.568);
+    
+    /*Texto */
+    --text-color-primary: #313131;
+    --text-color-secondary: #6c6c6c;
+}
+
+body {
+    color: var(--text-color-secondary);
+    background-color: var(--background-color);
+}
