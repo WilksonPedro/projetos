@@ -1,0 +1,22 @@
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-block: 20px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    padding-block: 8px;
+    gap: 20px;
+}
+
+nav ul li:last-child img {
+    width: 40px;
+    height: 40px;
+    /*object-fit é usado para definir como o conteúdo da imagem
+    deve ser redimensionado para caber no contêiner ele altera a forma como a imagem é exibida */
+    object-fit: cover;
+}
