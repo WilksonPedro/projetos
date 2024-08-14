@@ -1,0 +1,13 @@
+main {
+    display: flex;
+    flex-wrap: wrap;
+    /* flex-wrap serve e é usado para que os elementos filhos de um container flexível sejam dispostos em várias linhas ou colunas */
+    gap: 24px;
+    padding-block: 24px;
+}
+
+main img {
+    width: 286px;
+    height: 286px;
+    object-fit: cover;
+}
