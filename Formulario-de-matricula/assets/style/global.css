@@ -1,0 +1,28 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --font-family: 'Poppins', sans-serif;
+    --text: 400 1rem/1.5 var(--font-family);
+    --text-sm: 400 .875rem/1.4 var(--font-family);
+
+    --text-color-primary: #262524;
+    --text-color-secondary: #57534e;
+    --text-color-tertiary: #8f8881;
+    --text-hightlight: #e43a12;
+
+    --surface-primary: #ffffff;
+    --suface-secondary: #fee7d6;
+    
+    --stroke-default: #d6d3d1;
+    --stroke-hightlight: #f3541c;
+    --semantic-error: #dc2626;
+}
+
+body {
+    background-color: blueviolet;
+    font-size: var(--text);
+}
