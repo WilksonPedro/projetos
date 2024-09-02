@@ -23,6 +23,6 @@
 }
 
 body {
-    background-color: blueviolet;
+    overflow: hidden;
     font-size: var(--text);
 }
