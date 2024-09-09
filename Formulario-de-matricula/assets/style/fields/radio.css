@@ -1,0 +1,65 @@
+/*
+Sempre que for usado desta forma o label+ o sinal de + indica que estou pegando o elemento que
+irmao do label, ou seja, o elemento que vem logo após o label.
+*/
+label + .radio-wrapper {
+    margin-top: 1rem;
+}
+
+.radio-wrapper {
+    display: grid;
+    /*
+    a propriedade repeat usada abaixo é responsavel por repetir o valor passado no primeiro parametro
+    primeiro, automaticamente a qualquer quantidade de colunas necessarias.
+    segundo, o atributo minmax é responsavel por definir o tamanho minimo seguido pelo maximo que
+    a coluna pode ter que no caso é um fr.
+    */
+    grid-template-columns: repeat(auto-fit, minmax(7.5rem, 1fr));
+    gap: 1rem;
+}
+
+.radio-inner {
+    border: 1px solid var(--stroke-default);
+    border-radius: .5rem;
+    display: grid;
+    justify-items: center;
+    gap: .5rem;
+    padding: 2rem .5rem .5rem;
+    position: relative;
+    /*
+    esta linha é responsavel por tirar todos os estilos colocados ate agora no input
+    o atributo all: unset; é responsavel por resetar todos os estilos do input
+    */
+    & input,
+    & input:focus,
+    & input:hover {
+        all: unset;
+        position: absolute;
+        inset: 0;
+    }
+
+    & .radio-image{
+        background-image: url(../../icons/radio-default.svg);
+        width: 1.5rem;
+        height: 1.5rem;
+        position: absolute;
+        top: .5rem;
+        left: .5rem;
+    }
+
+    &:hover, &:focus-within {
+        border: 1px solid var(--stroke-highlight);
+
+        & .radio-image {
+            background-image: url(../../icons/radio-hover.svg);
+        }
+    }
+
+    &:has(:checked) {
+        border: 2px solid var(--stroke-highlight);
+
+        & .radio-image {
+            background-image: url(../../icons/radio-checked.svg);
+        }
+    }
+}
