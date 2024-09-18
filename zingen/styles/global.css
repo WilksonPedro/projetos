@@ -37,6 +37,8 @@
     --fs-lg: 1.25rem;
     --fs-xl: 1.5rem;
     --fs-2xl: 2.5rem;
+
+    --padding-x-lg: 1.5rem; 
 }
 
 html {
@@ -91,5 +93,7 @@ ul[role="list"] {
         --fs-lg: 2rem;
         --fs-xl: 3rem;
         --fs-2xl: 4rem;
+
+        --padding-x-lg: 2rem;
     }
 }
