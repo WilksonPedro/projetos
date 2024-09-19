@@ -19,6 +19,19 @@
         <a href="#" class="btn btn-md">label</a>
         <button href="#" class="btn btn-lg">label</button>
     </div>
+
+    <!--
+    gambiara para deixar um botão tranparente, com degrade e com borda tudo sendo feito pelo css
+    -->
+    <div class="flex gap-1">
+        <!--
+        aria-label serve como um label para o elemento, mas não é visível na tela para o usuario
+        para torna-lo visivel é necessario adicionar o conteudo diretamente pelo css.
+        -->
+        <a aria-label="label" href="#" class="btn btn-sm"></a>
+        <span aria-label="label" href="#" class="btn btn-md"></span>
+        <button aria-label="label" href="#" class="btn btn-lg"></button>
+    </div>
 </body>
 
 </html>
