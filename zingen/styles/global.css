@@ -91,6 +91,24 @@ a {
     */
   color: inherit;
 }
+
+a:hver {
+  background: linear-gradient(
+    90deg,
+    var(--brand-color-secondary) 0%,
+    var(--brand-color-primary) 100%
+  );
+  /*
+  usando o webkit-background-clip: text; e background-clip: text; para fazer com que o texto tenha um gradiente.
+  */
+  -webkit-background-clip: text;
+  /*
+  é preciso usar novamente o background-clip: text; para que funcione em outros navegadores.
+  */
+  background-clip: text;
+  color: transparent;
+
+}
 /*
 role="list" é uma maneira de informar ao navegador que o elemento é uma lista. ele deve ser aplicado no elemento pai da lista ou seja a ul ou ol.
 sempre que for criar uma lista, deve-se aplicar o role="list" no elemento pai assim ajudando o navegador a entender que se trata de uma lista.
