@@ -102,9 +102,6 @@ a:hver {
   usando o webkit-background-clip: text; e background-clip: text; para fazer com que o texto tenha um gradiente.
   */
   -webkit-background-clip: text;
-  /*
-  é preciso usar novamente o background-clip: text; para que funcione em outros navegadores.
-  */
   background-clip: text;
   color: transparent;
 
