@@ -92,7 +92,7 @@ a {
   color: inherit;
 }
 
-a:hver {
+a:hover {
   background: linear-gradient(
     90deg,
     var(--brand-color-secondary) 0%,
@@ -116,6 +116,9 @@ ul[role="list"] {
 }
 
 @media (width >= 80em) {
+/*
+  Quando a tela for maior que o valor acima a pagima ira aumentar os tamanhos das fontes
+*/
   :root {
     --fs-lg: 2rem;
     --fs-xl: 3rem;

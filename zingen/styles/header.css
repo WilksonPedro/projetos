@@ -1,5 +1,8 @@
 header {
     & a:first-child {
+        /*
+         O primeiro link dentro do header tera uma margin direita que o afastara do outros intens
+        */
         margin-right: auto;
     }
 }
