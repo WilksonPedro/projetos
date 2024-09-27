@@ -115,6 +115,10 @@ ul[role="list"] {
   list-style: none;
 }
 
+img {
+  max-width: 100%;
+  display: inline-block;
+}
 @media (width >= 80em) {
 /*
   Quando a tela for maior que o valor acima a pagima ira aumentar os tamanhos das fontes
