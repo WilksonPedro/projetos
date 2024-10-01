@@ -15,3 +15,4 @@ importaçoes css tambem podem ter condicionais, por exemplo:
 a importação acima só será feita se a largura da tela for maior ou igual a 80rem.
 */
 @import url(pricing.css);
+@import url(download.css);
