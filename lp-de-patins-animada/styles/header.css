@@ -1,0 +1,48 @@
+header {
+    max-width: 80rem;
+    width: 100%;
+    padding: 1.25rem 2rem;
+    margin-inline:auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+    img {
+        width: 2rem;
+        height: 2rem;
+
+        transition: transform 500ms;
+    }
+    /*
+    Este seletr usando [] é chamado de atributo. ele seleciona elementos que possuem um atributo específico.
+    neste caso tudo que tiver src e logo no nome sera selecionado e aplicado um hover.
+    */
+    img[src*="logo"]:hover {
+        /* rotate é uma função que rotaciona o elemento */
+        transform: rotate(90deg);
+    }
+
+    img[src*="shopping"]:hover {
+        transform: rotate(-25deg);
+    }
+
+    a {
+        position: relative;
+    }
+
+    a span {
+        font: 500 0.75rem/1.3 "Inter", sans-serif;
+        position: absolute;
+        top: -0.6rem;
+        right: -0.10rem;
+        background-color: var(--snitap-sun);
+        width: 1.25rem;
+        height: 1.25rem;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        border-radius: 50%;
+    }
+}
