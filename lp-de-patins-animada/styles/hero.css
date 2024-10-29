@@ -35,48 +35,114 @@
 
   & h1 span {
     display: block;
-    animation: slideUp 6s infinite ease;
+    animation: slideUp 6s 3s infinite ease;
   }
-
+  /* buttons */
   & .buttons {
     display: flex;
     gap: 2rem;
     margin-top: 3rem;
-    
+
     & .button {
       display: flex;
       align-items: center;
-      gap: .75rem;
+      gap: 0.75rem;
       border-radius: 5rem;
       transition: scale 350ms;
 
-    &.buy { /* é necessario colocar o &. junto para que o css entenda que é um elemento com duas classes */
-      padding: 1.5rem 3rem;
-      background-color: var(--snitap-sun);
+      &.buy {
+        /* é necessario colocar o &. junto para que o css entenda que é um elemento com duas classes */
+        padding: 1.5rem 3rem;
+        background-color: var(--snitap-sun);
+      }
+
+      &.play span {
+        padding: 1.5rem;
+        border-radius: 50%;
+        background-color: white;
+        display: flex;
+      }
+
+      &:hover {
+        scale: 1.1;
+      }
     }
 
-    &.play span {
-      padding: 1.5rem;
-      border-radius: 50%;
-      background-color: white;
-      display: flex;
-    }
-
-    &:hover {
-      scale: 1.1;
+    & .shadow {
+      box-shadow: 0 2px 5px rgb(0 0 0 / 0.1), 0 9px 9px rgb(0 0 0 / 0.09),
+        0 20px 12px rgb(0 0 0 / 0.05), 0 36px 15px rgb(0 0 0 / 0.01);
     }
   }
+  /* fim buttons */
 
-  & .shadow {
-    box-shadow: 
-    0 2px 5px rgb(0 0 0 / .1),
-    0 9px 9px rgb(0 0 0 / .09),
-    0 20px 12px rgb(0 0 0 / .05),
-    0 36px 15px rgb(0 0 0 / .01);
+  & > div:nth-child(2) {
+    /* Primeira div responsavel */
+    display: block;
+    width: 100%;
+    max-width: 30.5rem;
+    height: 30.5rem;
+
+    & .content {
+      width: 100%;
+      height: 100%;
+      position: relative;
+    }
+
+    & img {
+      position: absolute;
+      width: 100%;
+    }
+
+    & img[src*="ellipse"] {
+      width: 95%;
+      top: 3%;
+      left: 3%;
+
+      transform: translateX(200%);
+      animation: 3s slideIn ease forwards;
+    }
+
+    & img[src*="patins"] {
+      z-index: 1;
+
+      transform: translateX(200%);
+      animation: slideIn 3s ease forwards;
+    }
+
+    & img[src*="stars"] {
+      z-index: 0;
+      top: 30%;
+      max-width: 5.5rem;
+      opacity: 0;
+      transform: translatex(400%);
+      animation: slideIn 2s 800ms ease both, appear 100ms 800ms both;
+    }
+
+    & img[src*="star2"] {
+      max-width: 2.5rem;
+      right: 0;
+      bottom: 35%;
+      transform: translateX(400%);
+      animation: slideIn 2.2s  800ms ease forwards;
+    }
   }
 }
 
+@keyframes slideIn {
+  50% {
+    transform: translateX(-20px);
+  }
 
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes appear {
+  to {
+    opacity: 1;
+  }
+}
 
 @keyframes slideUp {
   /* radical static */
@@ -147,5 +213,4 @@
   100% {
     transform: translateY(-15rem);
   }
-}
 }
